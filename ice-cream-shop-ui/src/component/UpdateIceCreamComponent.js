@@ -54,28 +54,34 @@ const UpdateIceCreamComponent = () => {
                 >
                 
                 <TextField id="outlined-basic" label="Flavour Code" variant="outlined" fullWidth 
-                value={flavourCode}
+                value={flavourCode} inputProps={{readOnly: true, }}
                 onChange={(e)=>setFlavourCode(e.target.value)}
                 /><br />
+
                 <TextField id="outlined-basic" label="Flavour" variant="outlined" fullWidth
                 value={flavour}
                 onChange={(e)=>setFlavour(e.target.value)}
                 /><br />
+
                 <TextField id="outlined-basic" label="Toppings" variant="outlined" fullWidth
                 value={toppings}
                 onChange={(e)=>setToppings(e.target.value)}
                 /><br />
+
                 <TextField id="outlined-basic" label="Cost" variant="outlined" fullWidth
                 value={cost}
                 onChange={(e)=>setCost(e.target.value)}
                 /><br /><br />
+
                 <Button variant='contained' color='error' style={{float:'right'}} href='/iceCreams'>
-                    Cancel
+                    BACK TO HOME
                 </Button>
+
                 <Button style={{float:'right'}} variant='contained' color='primary' 
                 onClick={(e) => updateIceCream(e)}>
-                    Submit
+                    UPDATE YOUR ICE CREAM
                 </Button>
+
                  <br /><br />
             </Box>
         </Paper>

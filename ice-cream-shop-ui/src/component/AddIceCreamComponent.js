@@ -70,11 +70,11 @@ const AddIceCreamComponent = () => {
                 onChange={(e)=>setCost(e.target.value)}
                 /><br /><br />
                 <Button variant='contained' color='error' style={{float:'right'}} href='/iceCreams'>
-                    Cancel
+                    BACK TO HOME
                 </Button>
                 <Button style={{float:'right'}} variant='contained' color='primary' 
                 onClick={(e) => addIceCream(e)}>
-                    Submit
+                    ADD ICE CREAM
                 </Button>
                  <br /><br />
             </Box>

@@ -7,6 +7,7 @@ import AddIceCreamComponent from './component/AddIceCreamComponent';
 import UpdateIceCreamComponent from './component/UpdateIceCreamComponent';
 import ViewIceCreamComponent from './component/ViewIceCreamComponent';
 import Homepage from './component/Homepage';
+import ConfirmDeleteComponent from './component/ConfirmDeleteComponent';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route exact path="/add-icecream" component={AddIceCreamComponent}></Route>
             <Route path = "/update-icecream/:id" component={UpdateIceCreamComponent}></Route>
             <Route path = "/get-icecream/:id" component={ViewIceCreamComponent}></Route>
+            <Route path = "/confirm-delete/:id" component={ConfirmDeleteComponent}></Route>
           </Switch> 
         </div>
         <FooterComponent />

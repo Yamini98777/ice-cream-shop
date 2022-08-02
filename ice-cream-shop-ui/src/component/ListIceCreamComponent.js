@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Table,TableBody,TableCell,TableContainer,TableHead,TableRow,Paper, Button } from '@mui/material';
 import IceCreamShopService from '../services/IceCreamShopService';
-import { Link } from 'react-router-dom';
 
 const ListIceCreamComponent = () => {
  
@@ -64,7 +63,7 @@ const ListIceCreamComponent = () => {
                   <b>Update</b>
               </Button>
 
-              <Button variant='contained' color='error' onClick={() => deleteIceCream(iceCream.flavourCode)}><b>Delete</b></Button>
+              <Button variant='contained' color='error' href={`/confirm-delete/${iceCream.flavourCode}`}><b>Delete</b></Button>
 
               <Button variant='contained' color='primary' style = {{marginLeft:'20px'}} href={`/get-icecream/${iceCream.flavourCode}`}>
                   <b>View</b>
